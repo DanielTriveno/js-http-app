@@ -10,7 +10,7 @@ export const saveUser = async(userLike) => {
 
     const user = new User (userLike);
     
-    if (!user.firstName || user.lastName)
+    if (!user.firstName || !user.lastName)
         throw 'First & Lasta name are required'
 
     const userToSave = userModeToLocalHost(user);

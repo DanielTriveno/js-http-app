@@ -7,7 +7,8 @@
       "avatar": "http://placehold.it/32x32",
       "first_name": "Ryan",
       "last_name": "Kent",
-      "gender": "male"
+      "gender": "male",
+      "last_Name": "Kent"
     },
     {
       "id": "2",

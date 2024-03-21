@@ -56,7 +56,6 @@ export const renderTable = (element) =>{
             <td>${user.id}</td>
             <td>${user.balance}</td>
             <td>${user.firstName}</td>
-            <td>${user.firstName}</td>
             <td>${user.lastName}</td>
             <td>${user.isActive}</td>
             <td>

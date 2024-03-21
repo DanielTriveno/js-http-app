@@ -49,8 +49,12 @@ const onUserChanged = (updatedUser) => {
 }
 
 const reloadPage = async () =>{
-    throw new Error('Not implemented');
-
+    const users = await loadUsersByPage(state.currentPage);
+    if (users.length ===0){
+        await loadPrevioustPage();
+        return;
+    }
+    state.users = users;        
 } 
 
 export default {
@@ -70,6 +74,6 @@ export default {
      * 
      * @returns {Number}
      */
-    getCurrentPage: () => state.currentPage // primitivo por referecnia
+    getCurrentPage: () => state.currentPage, // primitivo por referecnia
     
 }
